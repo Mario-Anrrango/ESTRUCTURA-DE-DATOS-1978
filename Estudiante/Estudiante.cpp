@@ -33,13 +33,13 @@ void Estudiante::agregarCalificacion(float calificacion) {
     }
 }
 
-float Estudiante::calcularPromedio() const {
+float Estudiante::calcularPromedio(){
     if (calificaciones.empty()) return 0.0;
     float suma = accumulate(calificaciones.begin(), calificaciones.end(), 0.0);
     return suma / calificaciones.size();
 }
 
-void Estudiante::mostrarInformacion() const {
+void Estudiante::mostrarInformacion(){
     cout << "Nombre: " << nombre << endl;
     cout << "Promedio: " << calcularPromedio() << endl;
 }

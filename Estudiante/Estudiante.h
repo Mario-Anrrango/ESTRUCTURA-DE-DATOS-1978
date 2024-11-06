@@ -21,8 +21,8 @@ public:
    vector<float> getCalificaciones();
 
     void agregarCalificacion(float calificacion);
-    float calcularPromedio() const;
-    void mostrarInformacion() const;
+    float calcularPromedio();
+    void mostrarInformacion();
 
 private:
    string nombre;
