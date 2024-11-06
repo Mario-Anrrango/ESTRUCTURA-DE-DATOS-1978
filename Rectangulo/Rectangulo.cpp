@@ -36,17 +36,14 @@ float Rectangulo::getLargo(){
     return largo;
 }
 
-// Getter para el ancho
 float Rectangulo::getAncho(){
     return ancho;
 }
 
-// Método para calcular el área del rectángulo
 float Rectangulo::calcularArea(){
     return largo * ancho;
 }
 
-// Método para calcular el perímetro del rectángulo
 float Rectangulo::calcularPerimetro(){
     return 2 * (largo + ancho);
 }
