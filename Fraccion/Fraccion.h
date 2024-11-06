@@ -16,7 +16,7 @@ public:
    float getNumerador(void);
    float getDenominador(void);
 
-   Fraccion(float num = 0, float denm = 1);
+   Fraccion(float num, float denm);
    ~Fraccion();
 
    Fraccion sumar(Fraccion other);
