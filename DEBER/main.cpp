@@ -10,6 +10,8 @@ using namespace std;
 int ingresar(const char*);
 char numAChar(const char*);
 string charAString(const char*);
+int sumarEnteros(int, int);
+float sumarFlotantes();
 
 int ingresar(const char* msj) {
     char cad[10];
@@ -75,10 +77,28 @@ string charAString(const char* msj) {
 
     return result;
 }
-                      
+    
+int sumarEnteros(int a, int b){
 
+    int a,b,result;
+    string nombre;
+
+    cout << "Ingrese su nombre: " << endl;
+    getline(cin,nombre);
+
+    cout << "Ingrese dos numeros enteros:"<< endl;
+
+    cin >> a;
+    cin >> b;
+
+    result = a+b;
+    return result;
+}
 
 int main() {
+
+    int num1, num2;
+
     cout << "\tPRIMERA FUNCION: CHAR - INT" << endl;
     cout << " " << endl;
     int numero = ingresar("Ingrese un valor entero: ");
@@ -92,5 +112,7 @@ int main() {
     cout << " " << endl;
     string charAStr = charAString("Ingrese caracteres para formar una string: ");
     cout << "La cadena formada es: " << charAStr;
+    int sumaDeEnteros = sumarEnteros(num1, num2);
+    cout << "La suma es: "<< sumaDeEnteros;
     return 0;
 }
