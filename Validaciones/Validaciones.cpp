@@ -12,17 +12,16 @@
 #include <iostream>
 #include <conio.h>
 #include <cctype>
+#include <string>
 
-
-
-string Validaciones::capturarCadenaNumerica(char* msj, bool permitePunto) {
+std::string Validaciones::capturarCadenaNumerica(const char* msj, bool permitePunto) {
     char cad[20];
     char c;
     int i = 0;
     bool puntoDecimal = false;
     printf("%s", msj);
 
-    while ((c = getch()) != 13) {
+    while ((c = getch()) != 13) { // Enter key
         if (c >= '0' && c <= '9') {
             printf("%c", c);
             cad[i++] = c;
@@ -38,10 +37,10 @@ string Validaciones::capturarCadenaNumerica(char* msj, bool permitePunto) {
         }
     }
     cad[i] = '\0';
-    return string(cad);
+    return std::string(cad);
 }
 
-char Validaciones::ingresarLetra(char* msj) {
+char Validaciones::ingresarLetra(const char* msj) {
     char c;
     printf("%s", msj);
     while (true) {
@@ -55,7 +54,7 @@ char Validaciones::ingresarLetra(char* msj) {
     }
 }
 
-string Validaciones::ingresarString(char* msj) {
+std::string Validaciones::ingresarString(const char* msj) {
     char cad[50];
     char c;
     int i = 0;
@@ -73,5 +72,5 @@ string Validaciones::ingresarString(char* msj) {
         }
     }
     cad[i] = '\0';
-    return string(cad);
+    return std::string(cad);
 }

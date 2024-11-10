@@ -1,14 +1,13 @@
-#ifndef __VALIDACIONES_H
-#define __VALIDACIONES_H
-#include <string>
+#ifndef VALIDACIONES_H
+#define VALIDACIONES_H
 
-using namespace std;
+#include <string>
 
 class Validaciones {
 public:
-    string capturarCadenaNumerica(char* msj, bool permitePunto = false);
-    char ingresarLetra(char* msj);
-    string ingresarString(char* msj);
+    static std::string capturarCadenaNumerica(const char* msj, bool permitePunto = false);
+    static char ingresarLetra(const char* msj);
+    static std::string ingresarString(const char* msj);
 };
 
 #endif
