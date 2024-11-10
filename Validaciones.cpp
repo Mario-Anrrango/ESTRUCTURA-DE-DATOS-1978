@@ -11,8 +11,7 @@
 #include "Validaciones.h"
 #include <iostream>
 #include <conio.h>
-
-using namespace std;
+#include <cctype>
 
 string Validaciones::capturarCadenaNumerica(char* msj, bool permitePunto) {
     char cad[20];
@@ -34,6 +33,41 @@ string Validaciones::capturarCadenaNumerica(char* msj, bool permitePunto) {
             puntoDecimal = true;
             printf("%c", c);
             cad[i++] = c;
+        }
+    }
+    cad[i] = '\0';
+    return string(cad);
+}
+
+char Validaciones::ingresarLetra(char* msj) {
+    char c;
+    printf("%s", msj);
+    while (true) {
+        c = getch();
+        if (isalpha(c)) {
+            printf("%c", c);
+            return c;
+        } else if (c == 8) {
+            printf("\b \b");
+        }
+    }
+}
+
+string Validaciones::ingresarString(char* msj) {
+    char cad[50];
+    char c;
+    int i = 0;
+    printf("%s", msj);
+
+    while ((c = getch()) != 13) {
+        if (isalpha(c) || c == ' ') {
+            printf("%c", c);
+            cad[i++] = c;
+        } else if (c == 8) {
+            if (i > 0) {
+                printf("\b \b");
+                i--;
+            }
         }
     }
     cad[i] = '\0';
