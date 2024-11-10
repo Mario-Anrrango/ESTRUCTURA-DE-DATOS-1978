@@ -13,6 +13,8 @@
 #include <conio.h>
 #include <cctype>
 
+
+
 string Validaciones::capturarCadenaNumerica(char* msj, bool permitePunto) {
     char cad[20];
     char c;
