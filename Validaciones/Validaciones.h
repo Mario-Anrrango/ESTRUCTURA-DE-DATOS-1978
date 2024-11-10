@@ -2,6 +2,8 @@
 #define __VALIDACIONES_H
 #include <string>
 
+using namespace std;
+
 class Validaciones {
 public:
     string capturarCadenaNumerica(char* msj, bool permitePunto = false);
