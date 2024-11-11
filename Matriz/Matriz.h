@@ -13,7 +13,7 @@ template <typename T>
 class Matriz
 {
 public:
-   void setMatriz(T** matriz);
+   void setMatriz(T**);
    T getMatriz(void);
    Matriz(T);
    ~Matriz(T);

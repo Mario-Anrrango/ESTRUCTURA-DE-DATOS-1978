@@ -7,6 +7,8 @@
 
 #include "Matriz.h"
 
+template <typename T>
+
 ////////////////////////////////////////////////////////////////////////
 // Name:       Matriz::setMatriz(T** matriz)
 // Purpose:    Implementation of Matriz::setMatriz()
@@ -37,7 +39,7 @@ T Matriz::getMatriz(void)
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Matriz::Matriz()
+Matriz::Matriz(T)
 {
 }
 
@@ -47,7 +49,7 @@ Matriz::Matriz()
 // Return:     
 ////////////////////////////////////////////////////////////////////////
 
-Matriz::~Matriz()
+Matriz::~Matriz(T)
 {
    // TODO : implement
 }
