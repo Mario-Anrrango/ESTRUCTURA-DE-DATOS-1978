@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Funciones específicas para sumar valores
+
 int SumarEnteros(int obj1, int obj2) {
     return obj1 + obj2;
 }
@@ -12,7 +12,6 @@ float SumarFlotantes(float obj1, float obj2) {
     return obj1 + obj2;
 }
 
-// Funciones de ingreso usando Validaciones
 int ingresarEntero(const char* msj) {
     string entrada = Validaciones::capturarCadenaNumerica(msj);
     return atoi(entrada.c_str());

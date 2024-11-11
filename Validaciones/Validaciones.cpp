@@ -14,7 +14,7 @@
 #include <cctype>
 #include <string>
 
-std::string Validaciones::capturarCadenaNumerica(const char* msj, bool permitePunto) {
+string Validaciones::capturarCadenaNumerica(const char* msj, bool permitePunto) {
     char cad[20];
     char c;
     int i = 0;
@@ -37,7 +37,7 @@ std::string Validaciones::capturarCadenaNumerica(const char* msj, bool permitePu
         }
     }
     cad[i] = '\0';
-    return std::string(cad);
+    return string(cad);
 }
 
 char Validaciones::ingresarLetra(const char* msj) {
@@ -54,7 +54,7 @@ char Validaciones::ingresarLetra(const char* msj) {
     }
 }
 
-std::string Validaciones::ingresarString(const char* msj) {
+string Validaciones::ingresarString(const char* msj) {
     char cad[50];
     char c;
     int i = 0;
@@ -72,5 +72,5 @@ std::string Validaciones::ingresarString(const char* msj) {
         }
     }
     cad[i] = '\0';
-    return std::string(cad);
+    return string(cad);
 }

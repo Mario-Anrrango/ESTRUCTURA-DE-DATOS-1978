@@ -3,11 +3,13 @@
 
 #include <string>
 
+using namespace std;
+
 class Validaciones {
 public:
-    static std::string capturarCadenaNumerica(const char* msj, bool permitePunto = false);
+    static string capturarCadenaNumerica(const char* msj, bool permitePunto = false);
     static char ingresarLetra(const char* msj);
-    static std::string ingresarString(const char* msj);
+    static string ingresarString(const char* msj);
 };
 
 #endif
