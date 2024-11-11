@@ -17,14 +17,14 @@ int main()
 	} while (a <= 0 || b <= 0);
   // **Crea un objeto de la clase Calculo de tipo float**
   Calculo<float> intCalculo(a, b);
-  // **Asigna los resultados de las operaciones aritméticas a variables**
+  // **Asigna los resultados de las operaciones aritmï¿½ticas a variables**
   float resultadoSuma = intCalculo.sumar();
   float resultadoResta = intCalculo.restar();
   float resultadoMultiplicacion = intCalculo.multiplicar();
   // **Imprime los resultados**
   printf("La suma es: %f\n", resultadoSuma);
   printf("La resta es: %f\n", resultadoResta);
-  printf("La multiplicación es: %f\n", resultadoMultiplicacion);
+  printf("La multiplicaciï¿½n es: %f\n", resultadoMultiplicacion);
   // **Retorna 0**
   return 0;
 } 
