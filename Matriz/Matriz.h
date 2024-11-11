@@ -8,18 +8,18 @@
 #if !defined(__Matriz_Matriz_h)
 #define __Matriz_Matriz_h
 
+template <typename T>
+
 class Matriz
 {
 public:
    void setMatriz(T** matriz);
    T getMatriz(void);
-   Matriz();
-   ~Matriz();
+   Matriz(T);
+   ~Matriz(T);
 
-protected:
 private:
-   T matriz__;
-
+   T** matriz;
 
 };
 
