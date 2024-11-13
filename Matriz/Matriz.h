@@ -16,11 +16,10 @@ public:
    void setMatriz(T**);
    T getMatriz(void);
    Matriz(T);
-   ~Matriz(T);
+   ~Matriz();
 
 private:
    T** matriz;
-
 };
 
 #endif
